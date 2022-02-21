@@ -4,6 +4,7 @@ document.addEventListener('click', e => {
 
     if(isDropdownBtn) {
         e.target.closest('[data-dropdown]').classList.toggle('active');
+        console.log(e.target);
     }
 
     document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
