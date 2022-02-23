@@ -17,7 +17,12 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 
     width: 100%;
     display: flex;
     align-items: center;
+    z-index: 2;
 }
+#hamburger-menu-toggle {
+    display: none;
+}
+#hamburger-menu-toggle,
 .github-logo {
     color: white;
     font-size: 2rem;
@@ -63,6 +68,9 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 
 }
 .header-link:focus {
     color: #ABB1B7;
+}
+.header-bell {
+    font-size: 1rem;
 }
 .header-badge {
     font-size: 1rem;
@@ -571,6 +579,18 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 
     }
     .header {
         position: unset;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .github-logo {
+        margin-left: auto;
+    }
+    .header-bell {
+        font-size: 1.4rem !important;
+    }
+    #hamburger-menu-toggle {
+        display: block;
     }
     .activity {
         z-index: 0;

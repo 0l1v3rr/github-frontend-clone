@@ -11,17 +11,18 @@
     </head>
     <body>
         <header class="header">
+            <i class="fa-solid fa-bars" id="hamburger-menu-toggle"></i>
             <a href="https://github.com" class="github-logo">
                 <i class="fa-brands fa-github"></i>
             </a>
-            <input class="search" type="text" placeholder="Search or jump to...">
-            <a href="#" class="header-link">Pull requests</a>
-            <a href="#" class="header-link">Issues</a>
-            <a href="#" class="header-link">Marketplace</a>
-            <a href="#" class="header-link">Explore</a>
+            <input class="sm-d-none search" type="text" placeholder="Search or jump to...">
+            <a href="#" class="sm-d-none header-link">Pull requests</a>
+            <a href="#" class="sm-d-none header-link">Issues</a>
+            <a href="#" class="sm-d-none header-link">Marketplace</a>
+            <a href="#" class="sm-d-none header-link">Explore</a>
 
-            <a href="#" class="header-link header-badge" style="margin-left: auto;"><i class="fa-regular fa-bell"></i></a>
-            <div class="dropdown" data-dropdown>
+            <a href="#" class="header-bell header-link header-badge" style="margin-left: auto;"><i class="fa-regular fa-bell"></i></a>
+            <div class="sm-d-none dropdown" data-dropdown>
                 <button class="header-link header-badge" data-dropdown-btn>
                     <i class="fa-solid fa-plus" data-dropdown-btn></i> &nbsp;<i class="fa-solid fa-sort-down" data-dropdown-btn></i>
                 </button>
@@ -33,7 +34,7 @@
                     <a href="#" class="dropdown-link">New project</a>
                 </div>
             </div>
-            <div class="dropdown" data-dropdown>
+            <div class="sm-d-none dropdown" data-dropdown>
                 <button class="header-link header-badge" data-dropdown-btn>
                     <img class="header-avatar" src="https://avatars.githubusercontent.com/u/77695356?v=4" data-dropdown-btn> &nbsp;<i class="fa-solid fa-sort-down" data-dropdown-btn></i>
                 </button>
